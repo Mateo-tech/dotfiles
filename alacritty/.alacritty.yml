@@ -57,3 +57,5 @@ colors:
     cyan: '#6d96a5'
     white: '#aeb3bb'
 
+font:
+  size: 8
