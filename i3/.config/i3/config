@@ -185,5 +185,10 @@ bar {
         status_command i3status
 }
 
+# Gaps
+for_window [class="^.*"] border pixel 2 # Disable titlebars
+
 # Key bindings
 bindsym $mod+d exec rofi -show run
+gaps inner 10
+gaps outer 1
