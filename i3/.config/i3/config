@@ -110,16 +110,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
+set $ws1 "1: "
+set $ws2 "2: "
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws9 "9: "
+set $ws10 "10: "
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -187,8 +187,11 @@ bar {
 
 # Gaps
 for_window [class="^.*"] border pixel 2 # Disable titlebars
+gaps inner 20
+gaps outer 3
 
 # Key bindings
 bindsym $mod+d exec rofi -show run
-gaps inner 10
-gaps outer 1
+
+# Set wallpaper
+exec_always feh --bg-scale /home/mateo/Pictures/nord-theme-wallpaper.png
