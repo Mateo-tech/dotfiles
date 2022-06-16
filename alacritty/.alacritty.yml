@@ -8,6 +8,15 @@
 # References:
 #   https://github.com/alacritty/alacritty
 
+env:
+  TERM: alacritty
+
+window:
+  padding:
+    x: 5
+    y: 5
+  dynamic_padding: false
+
 colors:
   primary:
     background: '#2e3440'
