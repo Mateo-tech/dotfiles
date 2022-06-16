@@ -3,7 +3,7 @@
 - **Window manager:** i3
 - **Compositor:** picom
 - **Display manager:** None
-- **Terminal emulator:** alacritty
+- **Terminal emulator:** kitty
 - **Editor:** vim
 - **Menu:** rofi
 - **Theme:** Nord
