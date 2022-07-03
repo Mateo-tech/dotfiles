@@ -202,6 +202,6 @@ bindsym XF86AudioPrev exec cmus-remote --prev
 bindsym XF86AudioNext exec cmus-remote --next
 
 # Autostart
-exec_always feh --bg-scale /home/mateo/Pictures/nord-theme-wallpaper.png
+exec_always feh --bg-scale $HOME/.dotfiles/wallpapers/nord-mountains.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always picom --config $HOME/.config/picom/picom.conf --experimental-backends
