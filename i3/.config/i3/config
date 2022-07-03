@@ -160,10 +160,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -179,8 +179,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Colors
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
 # Gaps
-for_window [class="^.*"] border pixel 2 # Disable titlebars
+for_window [class="^.*"] border pixel 2
 gaps inner 20
 gaps outer 3
 gaps bottom 50
@@ -194,4 +204,4 @@ bindsym XF86AudioNext exec cmus-remote --next
 # Autostart
 exec_always feh --bg-scale /home/mateo/Pictures/nord-theme-wallpaper.png
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always picom --config $HOME/.config/picom/picom.conf
+exec_always picom --config $HOME/.config/picom/picom.conf --experimental-backends
