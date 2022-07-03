@@ -57,11 +57,3 @@ sudo pacman -S rofi
 stow rofi
 
 sudo pacman -S feh
-
-# Run stow linkining
-stow picom
-stow polybar
-stow rofi
-stow vim
-stow kitty
-stow i3
