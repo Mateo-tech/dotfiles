@@ -12,10 +12,10 @@ echo "Internet connection OK."
 sudo pacman -Syu
 
 # Install base-devel
-sudo pacman -S --needed base-devel
+sudo pacman -S --needed base-devel --noconfirm
 
 # Install xinit
-sudo pacman -s xorg-xinit
+sudo pacman -S xorg-xinit --noconfirm
 
 # Install base fonts
 mkdir ~/.local/share/fonts -p
@@ -32,28 +32,25 @@ sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R mateo:users ./yay-git
 cd yay-git
 makepkg -si
-cd
+cd 
 
-# Download dotfiles
-mkdir ~/.dotfiles
+sudo pacman -S stow --noconfirm
 cd ~/.dotfiles
-git init
-git remote add origin https://github.com/Mateo-tech/dotfiles
-git pull origin master
 
-sudo pacman -S stow
-
+sudo pacman -S i3-gaps --noconfirm
+sudo pacman -S i3lock --noconfirm
 stow i3
 
-sudo pacman -S kitty
+sudo pacman -S kitty --noconfirm
 stow kitty
 
-sudo pacman -S polybar
-polybar | polybar -m | cut -d ':' -f 1
+sudo pacman -S polybar --noconfirm
+3
+# polybar | polybar -m | cut -d ':' -f 1
 
 yay -S picom-ibhagwan-git
 
-sudo pacman -S rofi
+sudo pacman -S rofi --noconfirm
 stow rofi
 
-sudo pacman -S feh
+sudo pacman -S feh --noconfirm
