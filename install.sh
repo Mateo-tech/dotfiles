@@ -87,7 +87,6 @@ stow kitty
 
 sudo pacman -S polybar --noconfirm
 stow polybar
-# polybar | polybar -m | cut -d ':' -f 1
 
 yay -S picom-ibhagwan-git
 stow picom
@@ -95,4 +94,13 @@ stow picom
 sudo pacman -S rofi --noconfirm
 stow rofi
 
+stow vim
+
 sudo pacman -S feh --noconfirm
+
+sudo pacman -S firefox --noconfirm
+
+sudo pacman -S bluez --noconfirm
+sudo pacman -S bluez-utils --noconfirm
+
+sudo pacman -S pipewire pipewire-pulse
