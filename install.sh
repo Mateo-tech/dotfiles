@@ -86,6 +86,7 @@ sudo pacman -S kitty --noconfirm
 stow kitty
 
 sudo pacman -S polybar --noconfirm
+stow polybar
 # polybar | polybar -m | cut -d ':' -f 1
 
 yay -S picom-ibhagwan-git
