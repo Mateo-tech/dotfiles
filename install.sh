@@ -86,10 +86,10 @@ sudo pacman -S kitty --noconfirm
 stow kitty
 
 sudo pacman -S polybar --noconfirm
-3
 # polybar | polybar -m | cut -d ':' -f 1
 
 yay -S picom-ibhagwan-git
+stow picom
 
 sudo pacman -S rofi --noconfirm
 stow rofi
