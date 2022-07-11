@@ -16,4 +16,6 @@ else
 	polybar --reload mybar &
 fi
 
+DEFAULT_NETWORK_INTERFACE=$(ip route | grep '^default' | awk '{print $5}' | head -n1)
+
 echo "Polybar launched..."

@@ -103,4 +103,7 @@ sudo pacman -S firefox --noconfirm
 sudo pacman -S bluez --noconfirm
 sudo pacman -S bluez-utils --noconfirm
 
-sudo pacman -S pipewire pipewire-pulse
+sudo pacman -S pipewire pipewire-pulse --no-confirm
+
+sudo pacman -S nodejs --noconfirm
+sudo pacman -S npm --noconfirm

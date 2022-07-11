@@ -40,6 +40,12 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe
 " MAPPINGS --------------------------------------------------------------- {{{
 
 inoremap jj <esc>
+nmap <C-f> :NERDTreeToggle<CR>
+" NERDTree split navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " }}}
 
