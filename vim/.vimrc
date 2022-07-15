@@ -6,12 +6,12 @@ call plug#begin(expand('~/.vim/plugged'))
 	" System explorer
 	Plug 'preservim/nerdtree'
 	" Linting
-	Plug 'dense-analysis/ale'
+	" Plug 'dense-analysis/ale'
 call plug#end()
 
 colorscheme nord
 
-" Disable compatibility with vi
+" Diable compatibility with vi
 set nocompatible
 " Enable file type detection
 filetype on
@@ -40,12 +40,21 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe
 " MAPPINGS --------------------------------------------------------------- {{{
 
 inoremap jj <esc>
+
+" NERDTree toggle
 nmap <C-f> :NERDTreeToggle<CR>
+
 " NERDTree split navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" Disable arrow keys
+for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+	exec 'noremap' key '<Nop>'
+	exec 'inoremap' key '<Nop>'
+endfor
 
 " }}}
 
@@ -63,7 +72,12 @@ set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 set laststatus=2
 
 " }}}
-set encoding=utf-8
+
+
+" " COC.NVIM ------------------------------------------------------------ {{{
+
+
+" " }}}
 
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
