@@ -1,10 +1,11 @@
 ## Configs
 - **Display server:** Xorg
-- **Window manager:** i3
-- **Compositor:** picom
+- **Window manager:** i3-gaps
+- **Status bar:** polybar
+- **Compositor:** None (previously picom)
 - **Display manager:** None
 - **Terminal emulator:** kitty
 - **Editor:** vim
 - **Menu:** rofi
-- **Theme:** Nord
+- **Theme:** Customized Nord
 - **Dotfiles manager:** GNU stow
